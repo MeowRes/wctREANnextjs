@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+</head>
+<body>
+    <div style="display: flex; flex-direction: row; align-items: center; justify-content: center; max-width: 500px; max-height: 400px; background-color: #DCE0ED;">
+        <div class="left">
+            <div class="pfp">
+                <img class="pfp" style="width: 70%; margin: 20% 0 100% 40%; border-radius: 100%;"
+                src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSC4DtHTGprsp7K8u0ZlfSDmIDplvQYH5vniT0I3rpcl6wqBh8b" />
+                <p style="font-size: large;">REAN</p>
+            </div>
+            <div class="icon" style="flex: 1; display: flex; flex-direction: column; align-items: center; gap: 10px; margin-bottom: 50px; margin-left: 30px;">
+                <span id="like" 
+                class="material-symbols-outlined" 
+                style="cursor: pointer; color: rgb(175, 175, 175); font-size: 24px;" 
+                onclick="this.style.color = this.style.color === 'purple' ? 'rgb(175, 175, 175)' : 'purple';">favorite</span>
+          
+          <span id="bookmark" 
+                class="material-symbols-outlined" 
+                style="cursor: pointer; color: rgb(175, 175, 175); font-size: 24px;" 
+                onclick="this.style.color = this.style.color === 'purple' ? 'rgb(175, 175, 175)' : 'purple';">bookmark_add</span>          
+            </div>
+        </div>
+        <div class="right">
+            <div class="tag" style="display: block;">
+                <p style="margin:50px 0 0 30px; ">Juna</p>
+                <p style="margin: 0 0 0 30px;">@12345678</p>
+            </div>
+            <div class="content" style="margin-right: 30px; display: flex; padding: 5%; flex-direction: row; align-items: center; justify-content: center;">
+                <p style=" padding-bottom: 10px; padding: 5%; width: 250px;  max-width: 230px; min-height: 110px; max-height: 110px; height: 110px; font-size: smaller; background-color: #ebedf4; flex: 1 1 auto;">Lorem ipsum, dolor sit ameth consectetur adipisicing elit. Ipsa, impedit, facilis quo nihil debitis obcaecati perferendis odio deserunt quod facere illo dolorem</p>
+                
+                <img
+                  
+                    style=" padding: 10px; max-width:160px; width:160px; min-width:160px; max-height: 145px; height: 145px; min-height: 145px; flex: 0 1 auto;" 
+                    src="https://www.economist.com/sites/default/files/images/2015/09/blogs/economist-explains/code2.png"
+                    />
+                <script>
+                    document.addEventListener("DOMContentLoaded", function() {
+                        const paragraph = document.querySelector('.content p');
+                        if (paragraph.textContent.length > 150) {
+                            paragraph.textContent = paragraph.textContent.slice(0, 150) + '...';
+                        }
+                    });
+                </script>
+                
+            </div>
+
+
+        </div>
+    </div>
+
+</body>
+</html>

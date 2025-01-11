@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <style>
+      .highlight {
+        background-color: yellow;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Form Events</h1>
+
+    <form id="form-example">
+      <input
+        type="text"
+        id="focus-input"
+        placeholder="Focus on me"
+      /><br /><br />
+      <input
+        type="text"
+        id="change-input"
+        placeholder="Type and change value"
+      /><br /><br />
+      <button type="submit">Submit</button>
+    </form>
+
+    <script>
+      $(document).ready(function () {
+        $("#focus-input").on("focus", function () {
+          $(this).addClass("highlight");
+        })
+
+        $("#focus-input").on("blur", function () {
+          $(this).removeClass("highlight");
+        })
+     
+        $("#change-input").on("change", function () {
+          alert(`Value changed to: ${$(this).val()}`)
+        })
+
+        $("#form-example").on("submit", function (e) {
+          e.preventDefault();
+          alert("Form submitted!");
+        })
+      })
+    </script>
+  </body>
+</html>

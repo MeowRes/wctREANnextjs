@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <style>
+        body {
+            background-color:#DCE0ED ;
+            display: flex; /* Use flexbox for body */
+        }
+        #nav {
+            min-height: 100%;
+            list-style: none;
+            width: 300px; /* Set a fixed width for the nav */
+            margin-left: 300px; /* Remove default margin */
+            padding: 0; /* Remove default padding */
+            position: fixed;
+            background-color: #DCE0ED;
+        }
+        button{
+            padding: 30px;
+            background-color: #DCE0ED;
+            text-decoration: none;
+            width: 300px;
+            border: none;
+        }
+        button.index {
+            background-color: #bbc5dd;
+        }
+        a{
+            text-decoration: none;
+            color: #000000;
+        }
+        .post {
+            flex: 1; /* Allow the post section to take up remaining space */
+            margin-left: 20px; /* Add some space between nav and post */
+        
+        }
+        .search{
+            align-items: center;
+            justify-content: center;
+            margin-left: 45%;
+            padding: 10px;
+            background-color: #f0f0f0;
+            text-decoration: none;
+            width: 400px;
+            position: fixed;
+            height: 40px;
+        }
+    </style>
+</head>
+<body>
+
+    
+    
+    <ul id="nav">
+        <div class="profile" style=" padding-bottom: 10px ;">
+            <div style="display: flex;  padding: 10px;">
+                <img style="width: 50px; border-radius: 100%; padding: 10px;" src="https://d2zp5xs5cp8zlg.cloudfront.net/image-79322-800.jpg"/>
+                <p style="font-size: x-large; margin-left: 130px;">REAN</p>
+            </div>
+            <div style="padding-left: 20px;">
+                <p>Tina</p>
+                <p class="user">@222222</p>
+            </div>
+    
+        </div>
+        <li><a href="./create.html"><button class="create">Create</button></a></li>
+        <li><a href="./index.html"><button class="index">Home</button></a></li>
+        <li><a href="./seniors.html"><button class="senior">Our Seniors</button></a></li>
+        <li><a href="./chat.html"><button class="chat">Chat</button></a></li>
+        <li><a href="./community.html"><button class="community">Community</button></a></li>
+        <li><a href="./settings.html"><button class="setting">Settings</button></a></li>
+    </ul>
+
+    <div><button class="search" >Search for something....</button>
+    
+    <div class="post" style="margin-left:600px ; margin-top: 40px;">
+        <user-profile name="Juna" username="12345678"
+            profileImage="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSC4DtHTGprsp7K8u0ZlfSDmIDplvQYH5vniT0I3rpcl6wqBh8b"
+            content="Lorem ipsum, dolor sit amet, consectetur adipisicing elit. Ipsa, impedit, facilis quo nihil debitis obcaecati perferendis odio deserunt quod facere illo dolorem."
+            content-image="https://www.economist.com/sites/default/files/images/2015/09/blogs/economist-explains/code2.png">
+        </user-profile>
+        <user-profile name="Juna" username="12345678"
+            profileImage="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSC4DtHTGprsp7K8u0ZlfSDmIDplvQYH5vniT0I3rpcl6wqBh8b"
+            content="Lorem ipsum, dolor sit amet, consectetur adipisicing elit. Ipsa, impedit, facilis quo nihil debitis obcaecati perferendis odio deserunt quod facere illo dolorem."
+            content-image="https://www.economist.com/sites/default/files/images/2015/09/blogs/economist-explains/code2.png">
+        </user-profile>
+        <user-profile name="Juna" username="12345678"
+            profileImage="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSC4DtHTGprsp7K8u0ZlfSDmIDplvQYH5vniT0I3rpcl6wqBh8b"
+            content="Lorem ipsum, dolor sit amet, consectetur adipisicing elit. Ipsa, impedit, facilis quo nihil debitis obcaecati perferendis odio deserunt quod facere illo dolorem."
+            content-image="https://www.economist.com/sites/default/files/images/2015/09/blogs/economist-explains/code2.png">
+        </user-profile>
+        <user-profile name="Juna" username="12345678"
+            profileImage="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSC4DtHTGprsp7K8u0ZlfSDmIDplvQYH5vniT0I3rpcl6wqBh8b"
+            content="Lorem ipsum, dolor sit amet, consectetur adipisicing elit. Ipsa, impedit, facilis quo nihil debitis obcaecati perferendis odio deserunt quod facere illo dolorem."
+            content-image="https://www.economist.com/sites/default/files/images/2015/09/blogs/economist-explains/code2.png">
+        </user-profile>
+        <user-profile name="Juna" username="12345678"
+            profileImage="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSC4DtHTGprsp7K8u0ZlfSDmIDplvQYH5vniT0I3rpcl6wqBh8b"
+            content="Lorem ipsum, dolor sit amet, consectetur adipisicing elit. Ipsa, impedit, facilis quo nihil debitis obcaecati perferendis odio deserunt quod facere illo dolorem."
+            content-image="https://www.economist.com/sites/default/files/images/2015/09/blogs/economist-explains/code2.png">
+        </user-profile>
+        <user-profile name="Juna" username="12345678"
+            profileImage="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSC4DtHTGprsp7K8u0ZlfSDmIDplvQYH5vniT0I3rpcl6wqBh8b"
+            content="Lorem ipsum, dolor sit amet, consectetur adipisicing elit. Ipsa, impedit, facilis quo nihil debitis obcaecati perferendis odio deserunt quod facere illo dolorem."
+            content-image="https://www.economist.com/sites/default/files/images/2015/09/blogs/economist-explains/code2.png">
+        </user-profile>
+        <user-profile name="Juna" username="12345678"
+            profileImage="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSC4DtHTGprsp7K8u0ZlfSDmIDplvQYH5vniT0I3rpcl6wqBh8b"
+            content="Lorem ipsum, dolor sit amet, consectetur adipisicing elit. Ipsa, impedit, facilis quo nihil debitis obcaecati perferendis odio deserunt quod facere illo dolorem."
+            content-image="https://www.economist.com/sites/default/files/images/2015/09/blogs/economist-explains/code2.png">
+        </user-profile>
+        <user-profile name="Juna" username="12345678"
+            profileImage="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSC4DtHTGprsp7K8u0ZlfSDmIDplvQYH5vniT0I3rpcl6wqBh8b"
+            content="Lorem ipsum, dolor sit amet, consectetur adipisicing elit. Ipsa, impedit, facilis quo nihil debitis obcaecati perferendis odio deserunt quod facere illo dolorem."
+            content-image="https://www.economist.com/sites/default/files/images/2015/09/blogs/economist-explains/code2.png">
+        </user-profile>
+        <user-profile name="Juna" username="12345678"
+            profileImage="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSC4DtHTGprsp7K8u0ZlfSDmIDplvQYH5vniT0I3rpcl6wqBh8b"
+            content="Lorem ipsum, dolor sit amet, consectetur adipisicing elit. Ipsa, impedit, facilis quo nihil debitis obcaecati perferendis odio deserunt quod facere illo dolorem."
+            content-image="https://www.economist.com/sites/default/files/images/2015/09/blogs/economist-explains/code2.png">
+        </user-profile>
+        <user-profile name="Juna" username="12345678"
+            profileImage="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSC4DtHTGprsp7K8u0ZlfSDmIDplvQYH5vniT0I3rpcl6wqBh8b"
+            content="Lorem ipsum, dolor sit amet, consectetur adipisicing elit. Ipsa, impedit, facilis quo nihil debitis obcaecati perferendis odio deserunt quod facere illo dolorem."
+            content-image="https://www.economist.com/sites/default/files/images/2015/09/blogs/economist-explains/code2.png">
+        </user-profile>
+        </div>
+    </div>
+
+    <script>
+        class UserProfile extends HTMLElement {
+            constructor() {
+                super();
+                this.attachShadow({ mode: 'open' });
+            }
+
+            connectedCallback() {
+                const name = this.getAttribute('name');
+                const username = this.getAttribute('username');
+                const profileImage = this.getAttribute('profileImage');
+                const content = this.getAttribute('content');
+                const contentImage = this.getAttribute('content-image');
+
+                this.shadowRoot.innerHTML = `
+                    <style>
+                        .material-symbols-outlined {
+                            font-family: 'Material Symbols Outlined';
+                            font-weight: normal;
+                            font-style: normal;
+                            font-size: 24px;
+                            display: inline-block;
+                            line-height: 1;
+                            cursor: pointer;
+                        }
+                    </style>
+                    <div style="display: flex; flex-direction: row; align-items: center; justify-content: center; max-width: 550px; background-color: #bbc5dd;">
+                        <div class="left" style="display: flex; align-items: flex-start; margin-right: 60px;">
+                            <img style="width: 45px; border-radius: 100%; margin-left: 50px; margin-bottom:215px; margin-right:10px" src="${profileImage}" />
+                        </div>
+                        <div class="icon" style="display: flex; flex-direction: column; align-items: center; gap:15px; margin-left:-100px; margin-right:10px; margin-top:30px">
+                            <span id="like" class="material-symbols-outlined">favorite</span>
+                            <span id="bookmark" class="material-symbols-outlined">bookmark_add</span>
+                        </div>
+                        <div class="right" style="flex: 1;">
+                            <div class="tag" style="margin-top: 30px; padding-left:15px">
+                                <p style="margin: 0;">${name}</p>
+                                <p style="margin: 0;">@${username}</p>
+                            </div>
+                            <div class="content" style="margin-right: 50px; display: flex; padding: 3%; flex-direction: row; align-items: center; justify-content: center;">
+                                <p style="padding-bottom: 10px; padding: 5%; width: 250px; max-width: 250px; min-height: 140px; max-height: 140px; height: 140px; font-size: smaller; background-color: #ebedf4; flex: 1 1 auto;">${content.length > 150 ? content.slice(0, 150) + '...' : content}</p>
+                                <img style="padding: 10px; max-width: 160px; width:200px; min-width: 200px; max-height: 180px; height: 180px; min-height: 183px; flex: 0 1 auto;" src="${contentImage}" />
+                            </div>
+                        </div> 
+                    </div>
+                `;
+
+                this.shadowRoot.getElementById('like').onclick = () => this.toggleLike();
+                this.shadowRoot.getElementById('bookmark').onclick = () => this.toggleBookmark();
+            }
+
+            toggleLike() {
+                const likeElement = this.shadowRoot.getElementById('like');
+                likeElement.style.color = likeElement.style.color === 'purple' ? 'rgb(175, 175, 175)' : 'purple';
+            }
+
+            toggleBookmark() {
+                const bookmarkElement = this.shadowRoot.getElementById('bookmark');
+                bookmarkElement.style.color = bookmarkElement.style.color === 'purple' ? 'rgb(175, 175, 175)' : 'purple';
+            }
+        }
+
+        customElements.define('user-profile', UserProfile);
+    </script>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+  </head>
+  <body>
+    <h1>Interactive To-Do List</h1>
+    <input type="text" id="new-task" placeholder="Enter a new task" />
+    <button id="add-task">Add Task</button>
+    <ul id="todo-list"></ul>
+
+    <script>
+      $(function () {
+        $("#add-task").on("click", function () {
+          const task = $("#new-task").val();
+          if (task) {
+            const listItem = `
+                        <li class="todo-item">
+                            <span class="task-text">${task}</span>
+                            <span class="remove-btn">Remove</span>
+                        </li>
+                    `;
+            $("#todo-list").append(listItem);
+            $("#new-task").val("");
+          }
+        });
+
+        // Mark a task as completed (event delegation)
+        $(document).on("click", ".task-text", function () {
+          $(this).toggleClass("completed");
+        });
+
+        // Remove a task (event delegation)
+        $(document).on("click", ".remove-btn", function () {
+          $(this).parent().remove();
+        });
+      });
+    </script>
+  </body>
+</html>
